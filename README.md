@@ -18,16 +18,10 @@ A visitor clicks your ad, lands on your site, browses around, and fills out a fo
 
 `<LeadSource />` captures the source on first visit and keeps it in `localStorage` until you need it.
 
-```
-  ┌─────────┐       ┌───────────┐       ┌─────────────┐
-  │ Ad click │──────▶│ Your site │──────▶│ <LeadSource/>│
-  └─────────┘       └───────────┘       └──────┬──────┘
-                                               │ saves to localStorage
-                                               ▼
-                                        ┌─────────────┐
-                    getLeadSource() ◀───│ Form submit │
-                                        └─────────────┘
-```
+1. Visitor clicks your ad and lands on your site
+2. `<LeadSource />` saves UTM params, click IDs, and referrer to `localStorage`
+3. Days later, visitor fills out a form
+4. You call `getLeadSource()` and send the data to your backend
 
 ## Install
 
