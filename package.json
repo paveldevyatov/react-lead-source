@@ -51,6 +51,14 @@
     "next",
     "remix"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paveldevyatov/react-lead-source.git"
+  },
+  "homepage": "https://github.com/paveldevyatov/react-lead-source#readme",
+  "bugs": {
+    "url": "https://github.com/paveldevyatov/react-lead-source/issues"
+  },
   "author": "Pavel Devyatov <p.devyatov@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
