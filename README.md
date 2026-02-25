@@ -53,25 +53,24 @@ export default function RootLayout({ children }) {
 
 ## Send to backend
 
+Attach lead source to any request:
+
 ```tsx
 import { getLeadSource } from "react-lead-source";
 
-async function handleSubmit(formData: FormData) {
-  await fetch("/api/leads", {
-    method: "POST",
-    body: JSON.stringify({
-      email: formData.get("email"),
-      ...getLeadSource(),
-    }),
-  });
-}
+await fetch("/api/leads", {
+  method: "POST",
+  body: JSON.stringify({
+    ...formData,
+    ...getLeadSource(),
+  }),
+});
 ```
 
 Your backend receives:
 
 ```json
 {
-  "email": "john@example.com",
   "utm_source": "google",
   "utm_medium": "cpc",
   "utm_campaign": "spring_sale",
