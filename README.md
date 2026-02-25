@@ -26,6 +26,10 @@ Ad click → Your site → <LeadSource /> saves the source → ... → Form subm
 
 ```bash
 npm install react-lead-source
+# or
+yarn add react-lead-source
+# or
+pnpm add react-lead-source
 ```
 
 ## Quick start
