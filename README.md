@@ -58,28 +58,39 @@ Attach lead source to any request:
 ```tsx
 import { getLeadSource } from "react-lead-source";
 
-await fetch("/api/leads", {
-  method: "POST",
-  body: JSON.stringify({
-    ...formData,
-    ...getLeadSource(),
-  }),
-});
+const source = getLeadSource();
+// source is a plain object — pass it however you like
 ```
 
-Your backend receives:
+Your backend receives all captured fields:
 
 ```json
 {
   "utm_source": "google",
   "utm_medium": "cpc",
   "utm_campaign": "spring_sale",
+  "utm_term": "crm software",
+  "utm_content": "hero_banner",
   "gclid": "EAIaIQobChMI...",
+  "gbraid": "CLjE...",
+  "wbraid": "AbjF...",
+  "fbclid": "IwAR3...",
+  "msclkid": "a1b2c3...",
+  "ttclid": "E.CP...",
+  "li_fat_id": "abc123",
+  "twclid": "27de1h...",
   "referrer": "https://www.google.com/",
   "page": "/pricing",
+  "language": "en-US",
+  "timezone": "America/New_York",
+  "screen_width": 1920,
+  "screen_height": 1080,
+  "user_agent": "Mozilla/5.0 ...",
   "landed_at": "2025-03-15T10:30:00.000Z"
 }
 ```
+
+> Only fields with actual values are included — if there's no `gclid` in the URL, it won't be in the object.
 
 ## Reactive hook
 
