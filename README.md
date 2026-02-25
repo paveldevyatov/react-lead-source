@@ -19,7 +19,14 @@ A visitor clicks your ad, lands on your site, browses around, and fills out a fo
 `<LeadSource />` captures the source on first visit and keeps it in `localStorage` until you need it.
 
 ```
-Ad click → Your site → <LeadSource /> saves the source → ... → Form submit → getLeadSource()
+  ┌─────────┐       ┌───────────┐       ┌─────────────┐
+  │ Ad click │──────▶│ Your site │──────▶│ <LeadSource/>│
+  └─────────┘       └───────────┘       └──────┬──────┘
+                                               │ saves to localStorage
+                                               ▼
+                                        ┌─────────────┐
+                    getLeadSource() ◀───│ Form submit │
+                                        └─────────────┘
 ```
 
 ## Install
