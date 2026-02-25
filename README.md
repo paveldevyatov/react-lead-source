@@ -97,13 +97,15 @@ function MyComponent() {
 All enabled by default. Disable what you don't need:
 
 ```tsx
-<LeadSource adClickIds={false} device={false} />
-```
-
-Last-touch attribution (overwrite on every visit):
-
-```tsx
-<LeadSource overwrite />
+<LeadSource
+  utm={true}
+  adClickIds={true}
+  referrer={true}
+  device={true}
+  page={true}
+  timestamp={true}
+  overwrite={false}
+/>
 ```
 
 ## What it captures
