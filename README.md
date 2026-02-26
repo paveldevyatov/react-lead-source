@@ -23,13 +23,27 @@ A visitor clicks your ad, lands on your site, browses around, and fills out a fo
 3. Days later, visitor fills out a form
 4. You call `getLeadSource()` and send the data to your backend
 
+## Highlights
+
+- **Zero dependencies** — only React >=18 as peer dep
+- **~1.2 KB** gzipped
+- **Works with ad blockers** — no external scripts, pixels, or cookies. Pure first-party JavaScript that reads URL params and `document.referrer` directly
+- **Captures referrer even without UTM** — if a visitor comes from Google organic, social media, or any other site, `document.referrer` is still saved
+- **First-touch** by default, **last-touch** with `overwrite`
+- **SSR-safe** — Next.js, Remix, Astro
+- **TypeScript** out of the box
+
 ## Install
 
 ```bash
 npm install react-lead-source
-# or
+```
+
+```bash
 yarn add react-lead-source
-# or
+```
+
+```bash
 pnpm add react-lead-source
 ```
 
@@ -153,16 +167,6 @@ All enabled by default. Disable what you don't need:
 | `storageKey` | `string` | `"lead-source"` | Custom localStorage key |
 
 All functions also accept an optional `storageKey` parameter.
-
-## Highlights
-
-- **Zero dependencies** — only React >=18 as peer dep
-- **~1.2 KB** gzipped
-- **Works with ad blockers** — no external scripts, pixels, or cookies. Pure first-party JavaScript that reads URL params and `document.referrer` directly
-- **Captures referrer even without UTM** — if a visitor comes from Google organic, social media, or any other site, `document.referrer` is still saved
-- **First-touch** by default, **last-touch** with `overwrite`
-- **SSR-safe** — Next.js, Remix, Astro
-- **TypeScript** out of the box
 
 ---
 
