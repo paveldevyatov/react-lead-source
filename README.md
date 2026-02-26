@@ -156,11 +156,19 @@ All functions also accept an optional `storageKey` parameter.
 
 ## Highlights
 
-- **~1.2 KB** gzipped
 - **Zero dependencies** — only React >=18 as peer dep
+- **~1.2 KB** gzipped
+- **Works with ad blockers** — no external scripts, pixels, or cookies. Pure first-party JavaScript that reads URL params and `document.referrer` directly
+- **Captures referrer even without UTM** — if a visitor comes from Google organic, social media, or any other site, `document.referrer` is still saved
 - **First-touch** by default, **last-touch** with `overwrite`
 - **SSR-safe** — Next.js, Remix, Astro
 - **TypeScript** out of the box
+
+---
+
+## Keywords
+
+react utm tracking, utm parameters react, marketing attribution, lead source tracking, referrer tracking, first touch attribution, last touch attribution, gclid tracking, fbclid tracking, ad click id, visitor source, campaign tracking, google ads attribution, meta ads tracking, linkedin ads tracking, tiktok ads tracking, nextjs utm, remix utm, react analytics, localStorage utm
 
 ## License
 
