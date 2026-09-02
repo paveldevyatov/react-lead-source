@@ -1,6 +1,6 @@
 {
   "name": "react-lead-source",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Drop-in React component that captures UTM parameters, ad click IDs, referrer and device context into localStorage — so you always know which channel brought each lead.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -41,6 +41,8 @@
     "fbclid",
     "msclkid",
     "ttclid",
+    "yclid",
+    "yandex-direct",
     "ad-tracking",
     "visitor",
     "source",

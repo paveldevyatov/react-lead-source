@@ -21,6 +21,8 @@ const AD_CLICK_KEYS = [
   "ttclid",
   "li_fat_id",
   "twclid",
+  "yclid",
+  "ymclid",
 ] as const;
 
 export interface LeadSourceData {
@@ -39,6 +41,8 @@ export interface LeadSourceData {
   ttclid?: string;
   li_fat_id?: string;
   twclid?: string;
+  yclid?: string;
+  ymclid?: string;
   // Referrer & page
   referrer?: string;
   page?: string;

@@ -94,6 +94,8 @@ Your backend receives all captured fields:
   "ttclid": "E.CP...",
   "li_fat_id": "abc123",
   "twclid": "27de1h...",
+  "yclid": "1234567890123456789",
+  "ymclid": "9876543210...",
   "referrer": "https://www.google.com/",
   "page": "/pricing",
   "language": "en-US",
@@ -139,7 +141,7 @@ All enabled by default. Disable what you don't need:
 | Category | Fields | Source |
 |---|---|---|
 | **UTM** | `utm_source` `utm_medium` `utm_campaign` `utm_term` `utm_content` | URL params |
-| **Ad click IDs** | `gclid` `gbraid` `wbraid` (Google) `fbclid` (Meta) `msclkid` (Bing) `ttclid` (TikTok) `li_fat_id` (LinkedIn) `twclid` (X) | URL params |
+| **Ad click IDs** | `gclid` `gbraid` `wbraid` (Google) `fbclid` (Meta) `msclkid` (Bing) `ttclid` (TikTok) `li_fat_id` (LinkedIn) `twclid` (X) `yclid` (Yandex Direct) `ymclid` (Yandex Market) | URL params |
 | **Referrer** | `referrer` | `document.referrer` |
 | **Device** | `language` `timezone` `screen_width` `screen_height` `user_agent` | Browser APIs |
 | **Page** | `page` `landed_at` | URL path + timestamp |
@@ -172,7 +174,7 @@ All functions also accept an optional `storageKey` parameter.
 
 ## Keywords
 
-react utm tracking, utm parameters react, marketing attribution, lead source tracking, referrer tracking, first touch attribution, last touch attribution, gclid tracking, fbclid tracking, ad click id, visitor source, campaign tracking, google ads attribution, meta ads tracking, linkedin ads tracking, tiktok ads tracking, nextjs utm, remix utm, react analytics, localStorage utm
+react utm tracking, utm parameters react, marketing attribution, lead source tracking, referrer tracking, first touch attribution, last touch attribution, gclid tracking, fbclid tracking, ad click id, visitor source, campaign tracking, google ads attribution, meta ads tracking, linkedin ads tracking, tiktok ads tracking, yclid tracking, yandex direct attribution, yandex ads tracking, nextjs utm, remix utm, react analytics, localStorage utm
 
 ## License
 
